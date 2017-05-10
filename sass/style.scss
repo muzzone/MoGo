@@ -1,12 +1,49 @@
 a:visited, a:focus, a:active, a:hover {
   outline:0 none !important;
-  cursor: hover;
+  cursor: pointer;
 }
 button:visited, button:focus, button:active, button:hover {
   outline:0 none !important;
-  cursor: hover;
+  cursor: pointer;
+}
+h2{
+	font-size:72px;
+	font-family:KaushanScript-Regular;
+	color:white;
+	text-align:center;
+}
+h1{
+	font-size:150px;
+	font-family:Montserrat-bold;
+	color:white;
+	text-transform:uppercase;
+	text-align:center;
 }
 body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 0;
 	padding: 0;
+}
+header{
+	display: flex;
+	flex-basis:1000px;
+	width:100%;
+	background-image: url(../img/headfon.png);
+	.header {
+		width: 1200px;
+		height: 1000px;
+		margin: auto;
+		.nav{
+			display: flex;
+			justify-content: flex-end;
+			margin-right:100px;
+			list-style-type:none;
+			li {
+				padding: 0 25px;
+			}
+		}
+	}
+
 }
