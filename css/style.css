@@ -15,6 +15,9 @@ h2 {
   font-family: KaushanScript-Regular;
   color: white;
   text-align: center;
+  cursor: default;
+  margin-top: 160px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -23,6 +26,8 @@ h1 {
   color: white;
   text-transform: uppercase;
   text-align: center;
+  cursor: default;
+  margin-top: 0;
 }
 
 ul {
@@ -35,6 +40,16 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: Montserrat-bold;
+  position: absolute;
+  color: white;
+  margin: 0;
+  padding: 5px;
+  cursor: default;
 }
 
 header {
@@ -68,6 +83,8 @@ header .header .nav li :hover {
 header .header .nav2 {
   display: flex;
   font-size: 14px;
+  padding-left: 0;
+  margin-top: 106px;
 }
 header .header .nav2 li {
   display: flex;
