@@ -84,7 +84,8 @@ header .header .nav2 {
   display: flex;
   font-size: 14px;
   padding-left: 0;
-  margin-top: 106px;
+  position: relative;
+  bottom: 0;
 }
 header .header .nav2 li {
   display: flex;
@@ -114,6 +115,11 @@ header .header div {
   margin: auto;
   cursor: pointer;
   line-height: 2.8;
+}
+
+footer {
+  display: flex;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
