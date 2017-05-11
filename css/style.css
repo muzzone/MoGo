@@ -1,6 +1,8 @@
-a:visited, a:focus, a:active, a:hover {
+a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
+  text-decoration: none;
   cursor: pointer;
+  color: white;
 }
 
 button:visited, button:focus, button:active, button:hover {
@@ -21,6 +23,10 @@ h1 {
   color: white;
   text-transform: uppercase;
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -51,6 +57,7 @@ header .header {
   width: 1200px;
   height: 1000px;
   margin: auto;
+  font-family: Montserrat-Regular;
 }
 header .header .nav {
   display: -webkit-box;
@@ -60,10 +67,42 @@ header .header .nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 100px;
-  list-style-type: none;
+  text-transform: uppercase;
 }
 header .header .nav li {
-  padding: 0 25px;
+  margin: 0 25px;
+  font-size: 14px;
+}
+header .header .nav li :hover {
+  border-bottom: 3px solid #fce38a;
+  padding-bottom: 10px;
+  color: #fce38a;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+header .header .nav2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+header .header .nav2 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 280px;
+      flex-basis: 280px;
+  height: 70px;
+  border-top: 3px solid white;
+  margin-right: 30px;
+}
+header .header .nav2 li span {
+  font-size: 20px;
+  font-family: Montserrat-bold;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
