@@ -2,7 +2,6 @@ a, a:visited, a:focus, a:active, a:hover {
   outline: 0 none !important;
   text-decoration: none;
   cursor: pointer;
-  color: white;
 }
 
 button:visited, button:focus, button:active, button:hover {
@@ -70,6 +69,9 @@ header .header .nav {
   margin-right: 100px;
   text-transform: uppercase;
 }
+header .header .nav a {
+  color: white;
+}
 header .header .nav li {
   margin: 0 25px;
   font-size: 14px;
@@ -98,6 +100,7 @@ header .header .nav2 li {
 header .header .nav2 li a {
   border-top: 3px solid #f38181;
   line-height: 3.6;
+  color: white;
 }
 header .header .nav2 li span {
   font-size: 20px;

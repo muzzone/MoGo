@@ -2,7 +2,6 @@ a, a:visited, a:focus, a:active, a:hover {
   outline:0 none !important; 
   text-decoration: none;
   cursor: pointer;
-  color:white;
 }
 
 button:visited, button:focus, button:active, button:hover {
@@ -61,6 +60,9 @@ header{
 			justify-content: flex-end;
 			margin-right:100px;
 			text-transform:uppercase;
+			a {
+				color:white;
+			}
 			li {
 				margin: 0 25px;
 				font-size: 14px;
@@ -88,6 +90,7 @@ header{
 				a{
 					border-top:3px solid #f38181;
 					line-height: 3.6;
+					color:white;
 					// :hover{
 					// 	border-top:3px solid #f38181;
 					// }
@@ -119,4 +122,5 @@ header{
 footer{
 	display:flex;
 	width:100%;
+
 }
