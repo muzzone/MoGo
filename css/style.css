@@ -30,26 +30,16 @@ ul {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 1000px;
-      flex-basis: 1000px;
+  flex-basis: 1000px;
   width: 100%;
   background-image: url(../img/headfon.png);
 }
@@ -60,12 +50,8 @@ header .header {
   font-family: Montserrat-Regular;
 }
 header .header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-right: 100px;
   text-transform: uppercase;
 }
@@ -77,32 +63,40 @@ header .header .nav li :hover {
   border-bottom: 3px solid #fce38a;
   padding-bottom: 10px;
   color: #fce38a;
-  -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 header .header .nav2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 14px;
 }
 header .header .nav2 li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 280px;
-      flex-basis: 280px;
+  align-items: center;
+  flex-basis: 280px;
   height: 70px;
   border-top: 3px solid white;
   margin-right: 30px;
+}
+header .header .nav2 li a {
+  border-top: 3px solid #f38181;
+  line-height: 3.6;
 }
 header .header .nav2 li span {
   font-size: 20px;
   font-family: Montserrat-bold;
   padding-right: 10px;
+}
+header .header div {
+  color: white;
+  width: 160px;
+  height: 40px;
+  border: 3px solid white;
+  font-family: Montserrat-bold;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  line-height: 2.8;
 }
 
 /*# sourceMappingURL=style.css.map */
