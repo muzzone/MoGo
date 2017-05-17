@@ -15,8 +15,6 @@ h2 {
   color: white;
   text-align: center;
   cursor: default;
-  margin-top: 160px;
-  margin-bottom: 10px;
 }
 
 h1 {
@@ -26,7 +24,12 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   cursor: default;
-  margin-top: 0;
+}
+
+h3 {
+  color: #cccccc;
+  font-size: 46px;
+  font-family: Montserrat-bold;
 }
 
 ul {
@@ -46,8 +49,6 @@ body {
   font-family: Montserrat-bold;
   position: absolute;
   color: white;
-  margin: 0;
-  padding: 5px;
   cursor: default;
 }
 
@@ -66,28 +67,22 @@ header .header {
 header .header .nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 100px;
   text-transform: uppercase;
 }
 header .header .nav a {
   color: white;
 }
 header .header .nav li {
-  margin: 0 25px;
   font-size: 14px;
 }
 header .header .nav li :hover {
   border-bottom: 3px solid #fce38a;
-  padding-bottom: 10px;
   color: #fce38a;
   transition: 0.1s;
 }
 header .header .nav2 {
   display: flex;
   font-size: 14px;
-  padding-left: 0;
-  position: relative;
-  bottom: 0;
 }
 header .header .nav2 li {
   display: flex;
@@ -95,34 +90,39 @@ header .header .nav2 li {
   flex-basis: 280px;
   height: 70px;
   border-top: 3px solid white;
-  margin-right: 30px;
 }
 header .header .nav2 li a {
   border-top: 3px solid #f38181;
-  line-height: 3.6;
   color: white;
 }
 header .header .nav2 li span {
   font-size: 20px;
   font-family: Montserrat-bold;
-  padding-right: 10px;
 }
 header .header div {
   color: white;
-  width: 160px;
-  height: 40px;
   border: 3px solid white;
   font-family: Montserrat-bold;
   font-size: 14px;
   text-align: center;
   margin: auto;
   cursor: pointer;
-  line-height: 2.8;
 }
 
 footer {
-  display: flex;
   width: 100%;
+}
+footer div:first-child p {
+  font-size: 15px;
+  font-family: Roboto;
+  color: #999999;
+}
+footer div:first-child div:first-child {
+  font-size: 15px;
+  font-family: Montserrat-bold;
+}
+footer div:first-child div:first-child span {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
