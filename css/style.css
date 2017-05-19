@@ -9,33 +9,6 @@ button:visited, button:focus, button:active, button:hover {
   cursor: pointer;
 }
 
-h2 {
-  font-size: 72px;
-  font-family: KaushanScript-Regular;
-  color: white;
-  text-align: center;
-  cursor: default;
-}
-
-h1 {
-  font-size: 150px;
-  font-family: Montserrat-bold;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: default;
-}
-
-h3 {
-  color: #cccccc;
-  font-size: 46px;
-  font-family: Montserrat-bold;
-}
-
-ul {
-  list-style-type: none;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -50,17 +23,16 @@ body {
   position: absolute;
   color: white;
   cursor: default;
+  padding-left: 10px;
 }
 
 header {
   display: flex;
-  flex-basis: 1000px;
   width: 100%;
   background-image: url(../img/headfon.png);
 }
 header .header {
   width: 1200px;
-  height: 1000px;
   margin: auto;
   font-family: Montserrat-Regular;
 }
@@ -68,45 +40,78 @@ header .header .nav {
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
-}
-header .header .nav a {
-  color: white;
+  margin-top: 8.3px;
+  height: 38px;
+  transition: 0.1s;
 }
 header .header .nav li {
   font-size: 14px;
+  transition: 0.1s;
+}
+header .header .nav li a {
+  color: white;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  padding: 0;
+  margin: 0 20px;
+  line-height: 2.5;
+  transition: 0.1s;
 }
 header .header .nav li :hover {
   border-bottom: 3px solid #fce38a;
   color: #fce38a;
-  transition: 0.1s;
+  background-color: rgba(255, 255, 255, 0);
 }
 header .header .nav2 {
   display: flex;
   font-size: 14px;
+  padding-left: 0;
+  padding-left: 30px;
+  margin-top: 155px;
 }
 header .header .nav2 li {
   display: flex;
   align-items: center;
   flex-basis: 280px;
   height: 70px;
-  border-top: 3px solid white;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  margin-right: 30px;
 }
 header .header .nav2 li a {
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 3.5;
+  transition: 0.2s;
+}
+header .header .nav2 li a:hover {
   border-top: 3px solid #f38181;
-  color: white;
 }
 header .header .nav2 li span {
+  padding-right: 5px;
   font-size: 20px;
   font-family: Montserrat-bold;
 }
 header .header div {
-  color: white;
+  transition: 0.1s;
   border: 3px solid white;
-  font-family: Montserrat-bold;
-  font-size: 14px;
   text-align: center;
   margin: auto;
   cursor: pointer;
+  width: 160px;
+  height: 40px;
+  line-height: 2.5;
+  margin-top: 70px;
+}
+header .header div a {
+  transition: 0.1s;
+  color: white;
+  font-family: Montserrat-bold;
+  font-size: 14px;
+}
+header .header div:hover {
+  border: 3px solid #fce38a;
+}
+header .header div:hover a {
+  color: #fce38a;
 }
 
 footer {
@@ -123,6 +128,67 @@ footer div:first-child div:first-child {
 }
 footer div:first-child div:first-child span {
   font-size: 20px;
+}
+
+h1 {
+  font-size: 150px;
+  padding-top: 40px;
+  margin: 0;
+  font-family: Montserrat-bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+}
+@media screen and (max-width: 880px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 430px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+h2 {
+  font-size: 72px;
+  padding-top: 150px;
+  margin: 0;
+  font-family: KaushanScript-Regular;
+  color: white;
+  text-align: center;
+  cursor: default;
+}
+@media screen and (max-width: 880px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 430px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  color: #cccccc;
+  font-size: 46px;
+  font-family: Montserrat-bold;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */
