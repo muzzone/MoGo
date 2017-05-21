@@ -3,10 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 			<!-- //////////////jQuery///////////// -->
-	<script
-	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-	  crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	  <script type="text/javascript" srs="js/main.js"></script>
 		
 	  				<!-- bootstrap -->
 
@@ -34,6 +33,21 @@
       		src: url(fonts/Roboto.ttf);
     	}		
 	</style>
+
+	<script>
+	$(document).ready(function(){
+		$('.menu-trigger').click(function(){
+			$('.trigger').slideToggle(100);
+		});
+
+		$(window).resize(function() {		
+			if (  $(window).width() > 601 ) {			
+				$('.trigger').removeAttr('style');
+			 }
+		});
+
+	});	
+	</script>
 	<title>MoGo</title>
 
 </head>
@@ -42,6 +56,11 @@
 	<div class="header">
 		<p class="logo">MoGo</p>
 
+		<div class="menu-trigger">
+			<hr  size="5px" noshade><hr  size="5px" noshade><hr size="5px" noshade>
+		</div>
+
+		<div class="trigger">
 		<ul class="nav">
 			<li><a href="#">About</a></li>
 			<li><a href="#">service</a></li>
@@ -49,10 +68,11 @@
 			<li><a href="#">blog</a></li>
 			<li><a href="#">contact</a></li>
 		</ul>
+		</div>
 
 		<h2>Creative Template</h2>
 		<h1>Welcome<br> to MoGo</h1>
-		<div><a href="#">LEARN MORE</a></div>
+		<div class="button"><a href="#">LEARN MORE</a></div>
 
 		<ul class="nav2">
 			<li><a href="#"><span>01</span>INTRO</a></li>

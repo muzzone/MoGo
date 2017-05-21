@@ -23,6 +23,9 @@ body {
 	color:white;
 	cursor:default;
 	padding-left: 10px;
+	@media screen and (max-width: 600px){
+		margin-top: 10px;
+	}
 }
 header{
 	display: flex;
@@ -33,13 +36,39 @@ header{
 		margin: auto;
 		font-family: Montserrat-Regular;
 
+		.menu-trigger{
+			display: none;
+			position: absolute;
+			width: 70px;
+			right: 0;
+			margin-right: 20px;
+			@media screen and (max-width: 600px){
+				display: block;
+			}
+		}
+
+		hr {
+			border-top: 7px solid rgba(255,255,255,0.9);
+			border-radius: 2px;
+			margin: 10px;
+		}
+		.trigger{
+			@media screen and (max-width: 600px){
+				display: none;
+			}
+		}
 		.nav{
 			display: flex;
 			justify-content: flex-end;
 			text-transform:uppercase;
 			margin-top: 8.3px;
-			height: 38px;
 			transition: 0.1s;
+
+			@media screen and (max-width: 600px){ 
+				flex-direction: column;
+				align-items: center;
+				padding-top: 90px;
+			}
 			li {
 				font-size: 14px;
 				transition: 0.1s;
@@ -59,12 +88,20 @@ header{
 			}
 		}
 
+
 		.nav2{
 			display: flex;
 			font-size: 14px;
 			padding-left: 0;
 			padding-left: 30px;
 			margin-top: 155px;
+
+			@media screen and (max-width: 510px){
+				flex-wrap: wrap;
+    			justify-content: center;
+    			margin-top: 50px;
+			}
+
 			li {
 				display: flex;
 				align-items: center;
@@ -72,7 +109,7 @@ header{
 				height: 70px;
 				border-top:3px solid rgba(255,255,255,0.5);
 				margin-right: 30px;
-
+				transition: 0.2s;
 				a{
 					border-top: 3px solid rgba(255,255,255,0);
 					color:rgba(255,255,255,0.5);
@@ -80,18 +117,23 @@ header{
 					transition: 0.2s;
 
 				}
-				a:hover {
-					border-top: 3px solid #f38181;
-				}
+				
 				span{
 				padding-right: 5px;
 				font-size: 20px;
 				font-family: Montserrat-bold;
 				}
 			}
+			li:hover {
+				border-top:3px solid rgba(255,255,255,1);
+				a {
+					border-top: 3px solid #f38181;
+					color:rgba(255,255,255,1);
+				}
+			}
 			
 		}
-		div {
+		.button {
 			transition: 0.1s;
 			a{
 				transition: 0.1s;
@@ -109,7 +151,7 @@ header{
 			margin-top: 70px;
 			
 		}
-		div:hover {
+		.button:hover {
 			a{
 				color: #fce38a;
 			}
@@ -157,8 +199,9 @@ h1{
 	@media screen and (max-width: 600px){ 
 		font-size: 75px;
 	}
-	@media screen and (max-width: 430px){ 
+	@media screen and (max-width: 510px){ 
 		font-size: 50px;
+		padding-top: 10px;
 	}
 
 }
@@ -175,8 +218,9 @@ h2{
 	}
 	@media screen and (max-width: 600px){ 
 		font-size: 40px;
+		padding-top: 80px;
 	}
-	@media screen and (max-width: 430px){ 
+	@media screen and (max-width: 510px){ 
 		font-size: 25px;
 	}
 }
