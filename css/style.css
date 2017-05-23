@@ -47,6 +47,7 @@ header .header .menu-trigger {
   width: 70px;
   right: 0;
   margin-right: 20px;
+  transition: 0.5s;
 }
 @media screen and (max-width: 600px) {
   header .header .menu-trigger {
@@ -57,6 +58,10 @@ header .header hr {
   border-top: 7px solid rgba(255, 255, 255, 0.9);
   border-radius: 2px;
   margin: 10px;
+  transition: 0.2s;
+}
+header .header .menu-trigger:hover hr {
+  border-top: 7px solid #fce38a;
 }
 @media screen and (max-width: 600px) {
   header .header .trigger {
@@ -117,11 +122,24 @@ header .header .nav2 li {
   margin-right: 30px;
   transition: 0.2s;
 }
+header .header .nav2 li hr {
+  position: absolute;
+  width: 0px;
+  margin-top: -23px;
+  margin-left: 0;
+  transition: 0.5s;
+  border-top: 3px solid #f38181;
+  transition: 0.5s;
+}
 header .header .nav2 li a {
-  border-top: 3px solid rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.5);
-  line-height: 3.5;
   transition: 0.2s;
+}
+header .header .nav2 li a:hover {
+  color: white;
+}
+header .header .nav2 li a:hover hr {
+  width: 70px;
 }
 header .header .nav2 li span {
   padding-right: 5px;
@@ -130,10 +148,6 @@ header .header .nav2 li span {
 }
 header .header .nav2 li:hover {
   border-top: 3px solid white;
-}
-header .header .nav2 li:hover a {
-  border-top: 3px solid #f38181;
-  color: white;
 }
 header .header .button {
   transition: 0.1s;
@@ -162,17 +176,86 @@ header .header .button:hover a {
 footer {
   width: 100%;
 }
-footer div:first-child p {
+footer .footer {
+  max-width: 1200px;
+  margin: auto;
+}
+footer h4 {
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: KaushanScript-Regular;
+  font-size: 14px;
+  color: #999999;
+}
+footer .footer > div {
+  margin-top: 20px;
+}
+footer .follow h3 {
+  margin-top: 0;
+}
+footer .follow p {
   font-size: 15px;
   font-family: Roboto;
   color: #999999;
 }
-footer div:first-child div:first-child {
-  font-size: 15px;
+footer .follow div {
+  font-size: 14px;
   font-family: Montserrat-bold;
 }
-footer div:first-child div:first-child span {
+footer .follow div span {
   font-size: 20px;
+}
+footer .follow .social span {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #999999;
+  padding-right: 10px;
+}
+footer .follow .social a {
+  padding: 5px;
+}
+footer .follow input {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+footer .follow button {
+  background: #95e1d3;
+  border: 2px solid #95e1d3;
+  color: white;
+  font-family: Montserrat-bold;
+  font-size: 14px;
+}
+footer .blogs p {
+  color: #646464;
+  font-family: Montserrat-Regular;
+  text-transform: uppercase;
+  padding: 5px;
+}
+footer .blogs div {
+  display: flex;
+}
+footer .blogs div div {
+  padding: 5px;
+  font-size: 12px;
+}
+footer .blogs div div span {
+  font-family: Roboto;
+  margin-top: 7px;
+  color: #999999;
+  margin-left: 4px;
+}
+footer .inst {
+  width: 302px;
+}
+footer .inst p {
+  color: #646464;
+  font-family: Montserrat-Regular;
+  text-transform: uppercase;
+  padding: 5px;
+}
+footer .inst a {
+  font-family: Roboto;
+  color: #999999;
 }
 
 h1 {
@@ -219,7 +302,7 @@ h2 {
 @media screen and (max-width: 600px) {
   h2 {
     font-size: 40px;
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
 @media screen and (max-width: 510px) {
