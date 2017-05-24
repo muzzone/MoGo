@@ -253,6 +253,21 @@ header .header .button:hover a {
   font-family: Montserrat-Regular;
   font-size: 14px;
 }
+@media screen and (max-width: 730px) {
+  .numbers {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .numbers div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .numbers div span {
+    margin-top: 0px;
+  }
+}
 
 footer {
   width: 100%;

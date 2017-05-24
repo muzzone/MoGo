@@ -276,6 +276,22 @@ header{
 				font-size: 14px;
 			}
 		}
+		@media screen and (max-width: 730px){
+			flex-wrap: wrap;
+			height: 100%;
+			
+			div{
+				padding-top:10px;
+				padding-bottom: 10px;
+				border-left: 1px solid rgba(255,255,255,0.3);
+				border-right: 1px solid rgba(255,255,255,0.3);
+				span{
+					margin-top: 0px;
+
+				}
+			}
+		}
+
 	}
 
 footer{
