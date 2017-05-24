@@ -199,6 +199,16 @@ header{
 		max-width: 1245px;
 		justify-content: center;
 		flex-wrap: wrap;
+		cursor: default;
+		p{
+			font-family: Montserrat-bold;
+			color: #fff;
+			font-size: 18px;
+			margin-top: -155px;
+    		margin-left: 140px;
+    		opacity: 0;
+    		z-index: 3;
+		}
 		> div {
 			background-color:#95e1d3;
 			height: 250px;
@@ -214,11 +224,23 @@ header{
 		img{
 			transition: 0.3s;
 		}
-		:hover img{
+		.mask{
+			margin-top: -271px;
+    		opacity: 0;
+    		height: 251px;
+    		width: 380px;
+		}
+		:hover img:first-child{
 			margin-top: -15px;
     		margin-left: 15px;
 		}
-		
+		:hover .mask {
+			margin-left: 15px;
+			opacity: 0.9;
+		}
+		:hover p{
+			opacity: 0.99;
+		}
 	}
 
 }

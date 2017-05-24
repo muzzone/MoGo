@@ -178,6 +178,16 @@ header .header .button:hover a {
   max-width: 1245px;
   justify-content: center;
   flex-wrap: wrap;
+  cursor: default;
+}
+.story .moveimg p {
+  font-family: Montserrat-bold;
+  color: #fff;
+  font-size: 18px;
+  margin-top: -155px;
+  margin-left: 140px;
+  opacity: 0;
+  z-index: 3;
 }
 .story .moveimg > div {
   background-color: #95e1d3;
@@ -194,9 +204,22 @@ header .header .button:hover a {
 .story .moveimg img {
   transition: 0.3s;
 }
-.story .moveimg :hover img {
+.story .moveimg .mask {
+  margin-top: -271px;
+  opacity: 0;
+  height: 251px;
+  width: 380px;
+}
+.story .moveimg :hover img:first-child {
   margin-top: -15px;
   margin-left: 15px;
+}
+.story .moveimg :hover .mask {
+  margin-left: 15px;
+  opacity: 0.9;
+}
+.story .moveimg :hover p {
+  opacity: 0.99;
 }
 
 footer {
