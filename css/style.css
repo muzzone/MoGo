@@ -88,16 +88,23 @@ header .header .nav li {
 }
 header .header .nav li a {
   color: white;
-  border-bottom: 3px solid rgba(255, 255, 255, 0);
   padding: 0;
   margin: 0 20px;
   line-height: 2.5;
   transition: 0.1s;
 }
+header .header .nav li a hr {
+  width: 0%;
+  border-top: 3px solid #fce38a;
+  border-radius: 0px;
+  margin: auto;
+}
 header .header .nav li :hover {
-  border-bottom: 3px solid #fce38a;
   color: #fce38a;
   background-color: rgba(255, 255, 255, 0);
+}
+header .header .nav li :hover hr {
+  width: 100%;
 }
 header .header .nav2 {
   display: flex;
@@ -173,6 +180,10 @@ header .header .button:hover a {
   color: #fce38a;
 }
 
+.story p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .story .moveimg {
   margin-bottom: 110px;
   display: flex;
@@ -180,6 +191,11 @@ header .header .button:hover a {
   justify-content: center;
   flex-wrap: wrap;
   cursor: default;
+}
+@media screen and (max-width: 420px) {
+  .story .moveimg {
+    display: none;
+  }
 }
 .story .moveimg p {
   font-family: Montserrat-bold;
@@ -258,11 +274,15 @@ header .header .button:hover a {
     flex-wrap: wrap;
     height: 100%;
   }
+  .numbers div:first-child {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
   .numbers div {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
   .numbers div span {
     margin-top: 0px;
@@ -308,7 +328,7 @@ footer .follow .social span {
   padding-right: 10px;
 }
 footer .follow .social a {
-  padding: 5px;
+  padding: 3.5px;
 }
 footer .follow input {
   margin-top: 30px;

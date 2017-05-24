@@ -87,17 +87,29 @@ header{
 				transition: 0.1s;
 				a {
 					color:white;
-					border-bottom: 3px solid rgba(255,255,255,0);
+					//border-bottom: 3px solid rgba(255,255,255,0);
 					padding: 0;
 					margin: 0 20px;
 					line-height: 2.5;
 					transition: 0.1s;
+					hr{
+					width: 0%;
+    				border-top: 3px solid #fce38a;
+    				border-radius:0px;
+    				margin: auto;
+					}
 				}
+
 				:hover{
-					border-bottom: 3px solid #fce38a;
+					hr{
+						width: 100%;
+					}
+
+					//border-bottom: 3px solid #fce38a;
 					color: #fce38a;
 					background-color:rgba(255,255,255,0);
 				}
+
 			}
 		}
 
@@ -194,6 +206,10 @@ header{
 /////////HEADER END/////////
 
 .story{
+	p {
+		padding-left:10px;
+		padding-right:10px;
+	}
 	.moveimg{
 		margin-bottom: 110px;
 		display: flex;
@@ -201,6 +217,9 @@ header{
 		justify-content: center;
 		flex-wrap: wrap;
 		cursor: default;
+		    @media screen and (max-width: 420px){
+				display: none;
+			}
 		p{
 			font-family: Montserrat-bold;
 			color: #fff;
@@ -209,6 +228,7 @@ header{
     		margin-left: 140px;
     		opacity: 0;
     		z-index: 3;
+
 		}
 		> div {
 			background-color:#95e1d3;
@@ -244,10 +264,12 @@ header{
 		}
 	}
 	////END MOVEIMG////
+
+
 }
 ///END STORY///
 
-	.numbers{
+.numbers{
 		margin-bottom: 110px;
 		display: flex;
 		justify-content: center;
@@ -279,12 +301,15 @@ header{
 		@media screen and (max-width: 730px){
 			flex-wrap: wrap;
 			height: 100%;
-			
+			div:first-child{
+				border:none;
+				border-bottom: 1px solid rgba(255,255,255,0.3);
+			}
 			div{
 				padding-top:10px;
 				padding-bottom: 10px;
-				border-left: 1px solid rgba(255,255,255,0.3);
-				border-right: 1px solid rgba(255,255,255,0.3);
+				border:none;
+				border-bottom: 1px solid rgba(255,255,255,0.3);
 				span{
 					margin-top: 0px;
 
@@ -292,7 +317,7 @@ header{
 			}
 		}
 
-	}
+}
 
 footer{
 	width:100%;
@@ -337,7 +362,7 @@ footer{
 				padding-right:10px;
 			}
 			a{
-				padding:5px;
+				padding: 3.5px;
 			}
 		}
 
