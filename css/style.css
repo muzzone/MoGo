@@ -125,7 +125,7 @@ header .header .nav2 li {
   align-items: center;
   flex-basis: 280px;
   height: 70px;
-  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  border-top: 3px solid rgba(255, 255, 255, 0.6);
   margin-right: 30px;
   transition: 0.2s;
 }
@@ -139,7 +139,7 @@ header .header .nav2 li hr {
   transition: 0.5s;
 }
 header .header .nav2 li a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   transition: 0.2s;
 }
 header .header .nav2 li a:hover {
@@ -372,6 +372,9 @@ footer .inst p {
 footer .inst a {
   font-family: Roboto;
   color: #999999;
+}
+footer h4 {
+  margin-top: 20px;
 }
 
 h1 {
