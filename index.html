@@ -3,13 +3,14 @@
 <head>
 	<title>EXEMPLE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 			<!-- //////////////jQuery///////////// -->
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		
+			<!-- ////////////Счетчик/////////// -->
+	<script type="text/javascript" src="js/jquery.spincrement.js"></script>
+			<!-- ///////////Скролл//////////////// -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script scr="js/main.js"></script>
 	  				<!-- bootstrap -->
-
 	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
@@ -49,7 +50,6 @@
 				$('.trigger').removeAttr('style');
 			 }
 		});
-
 	});	
 	</script>
 
@@ -62,7 +62,6 @@
 			duration: 1700, 
 			distance: '50px',
 			origin:'bottom'
-
 		})
 			sr.reveal('.fromLeft', { 
 			duration: 1500, 
@@ -83,15 +82,25 @@
 			sr.reveal('.learnMore', { 
 			duration: 1000,
 			delay: 2000,
-			distance: '100px', 
+			distance: '0px', 
 			origin:'bottom'
 		})
-
-
+			sr.reveal('.serice', { 
+			duration: 2000,
+			distance: '500px',
+			origin:'right' 
+			}, 
+			100);
 	});	
 	</script>
 
-	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<!-- //////// Счетчик ///////// -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+	    $(".spincrement").spincrement();
+	});
+	</script>
 
 </head>
 <body>
@@ -105,11 +114,11 @@
 
 		<div class="trigger fromTop">
 		<ul class="nav">
-			<li><a href="#">About <hr></a></li>
-			<li><a href="#">service<hr></a></li>
-			<li><a href="#">work<hr></a></li>
+			<li><a href="#About">About <hr></a></li>
+			<li><a href="#service">service<hr></a></li>
+			<li><a href="#work">work<hr></a></li>
 			<li><a href="#">blog<hr></a></li>
-			<li><a href="#">contact<hr></a></li>
+			<li><a href="#contact">contact<hr></a></li>
 		</ul>
 		</div>
 
@@ -119,16 +128,16 @@
 
 		<ul class="nav2 frombtm">
 			<li><a href="#"><hr><span>01</span>INTRO</a></li>
-			<li><a href="#"><hr><span>02</span>WORK</a></li>
-			<li><a href="#"><hr><span>03</span>ABOUT</a></li>
-			<li><a href="#"><hr><span>04</span>CONTACTS</a></li>
+			<li><a href="#work"><hr><span>02</span>WORK</a></li>
+			<li><a href="#About"><hr><span>03</span>ABOUT</a></li>
+			<li><a href="#contact"><hr><span>04</span>CONTACTS</a></li>
 		</ul>
 
 	</div>
 </header>
 
 <main>
-	<div class="story">
+	<div class="story" id="About">
 		<h4 class="frombtm">
 			<span>What we do <br></span>
 			STORY ABOUT US
@@ -136,20 +145,20 @@
 		<hr class="hrmain fromLeft">
 		<p class="standartText frombtm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-		<div class="moveimg ">
-			<div class="fromLeft" style="order: 1">
+		<div class="moveimg">
+			<div class="fromLeft">
 				<img src="img/Layer 44.png">
 				<img class="mask" src="img/mask.png">
 				<p>SUPER TEAM</p>
 			</div>
 
-			<div class="frombtm" style="order: 2">
+			<div class="frombtm">
 				<img src="img/Layer 39.png">
 				<img class="mask" src="img/mask.png">
 				<p>SUPER TEAM</p>
 			</div>
 
-			<div class="fromRight" style="order: 3">
+			<div class="fromRight">
 				<img src="img/Layer 41.png">
 				<img class="mask" src="img/mask.png">
 				<p>SUPER TEAM</p>
@@ -160,35 +169,69 @@
 	<!-- ///////END STORY/////// -->
 </main>
 
-	<div class="numbers frombtm">
+	<div class="numbers frombtm" id="work">
 		<div>
-			<span>42</span>
+			<span class="spincrement">42</span>
 			<p>Web Design Projects</p>
 		</div>
 		<div>
-			<span>123</span>
+			<span class="spincrement">123</span>
 			<p>HAPPY CLIENT</p>
 		</div>
 		<div>
-			<span>15</span>
+			<span class="spincrement">15</span>
 			<p>award winner</p>
 		</div>
 		<div>
-			<span>99</span>
+			<span class="spincrement">99</span>
 			<p>cup of coffee</p>
 		</div>
 		<div>
-			<span>24</span>
+			<span class="spincrement">24</span>
 			<p>members</p>
 		</div>
-
-
 	</div>
+
+<main>
+	<h4 class="frombtm">
+	<span>We work with <br></span>
+	Amazing Services
+	</h4 class="frombtm">
+	<hr class="hrmain fromLeft">
+
+	<div class="services" id="service">
+		<div class="serice">
+			<img src="img/ico/1.png">
+			<p>Photography</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		</div>
+		<div class="serice">
+			<img src="img/ico/2.png"">
+			<p>Web Design</p><span>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		</div>
+		<div class="serice">
+			<img src="img/ico/3.png"">
+			<p>Creativity</p><span>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		</div>
+		<div class="serice">
+			<img src="img/ico/4.png"">
+			<p>seo</p><span>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</span>
+		</div>
+		<div class="serice">
+			<img src="img/ico/5.png"">
+			<p>Css/Html</p><span>Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</span>
+		</div>
+		<div class="serice">
+			<img src="img/ico/6.png"">
+			<p>digital</p><span>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		</div>
+	</div>
+</main>
+
 
 <footer >
 
 	<!-- ///////////////////////////////// -->
-	<div class="row footer">
+	<div class="row footer" id="contact">
 
 	<div class="col-md-4 col-sm-12 col-xs-12 follow fromLeft">
 		<h3>MoGo</h3>
@@ -252,5 +295,7 @@
 	<hr>
 	<div class="col-md-12"><h4>© Created by Aleksey Miroshnychenko</h4></div>
 </footer>
+
+
 </body>
 </html>
