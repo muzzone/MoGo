@@ -86,11 +86,18 @@
 			origin:'bottom'
 		})
 			sr.reveal('.serice', { 
-			duration: 2000,
-			distance: '500px',
-			origin:'right' 
+			duration: 1000,
+			distance: '2000px',
+			origin:'left' 
 			}, 
 			100);
+
+			sr.reveal('.mvimg', { 
+			duration: 1000,
+			distance: '2000px',
+			origin:'left' 
+			}, 
+			200);
 	});	
 	</script>
 
@@ -146,20 +153,20 @@
 		<p class="standartText frombtm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 		<div class="moveimg">
-			<div class="fromLeft">
-				<img src="img/Layer 44.png">
-				<img class="mask" src="img/mask.png">
-				<p>SUPER TEAM</p>
-			</div>
-
-			<div class="frombtm">
-				<img src="img/Layer 39.png">
-				<img class="mask" src="img/mask.png">
-				<p>SUPER TEAM</p>
-			</div>
-
-			<div class="fromRight">
+			<div class="mvimg" style="order: 3">
 				<img src="img/Layer 41.png">
+				<img class="mask" src="img/mask.png">
+				<p>SUPER TEAM</p>
+			</div>
+
+			<div class="mvimg" style="order: 2">
+				<img src="img/Layer 39.png" >
+				<img class="mask" src="img/mask.png">
+				<p>SUPER TEAM</p>
+			</div>
+
+			<div class="mvimg" style="order: 1">
+				<img src="img/Layer 44.png" >
 				<img class="mask" src="img/mask.png">
 				<p>SUPER TEAM</p>
 			</div>
@@ -200,29 +207,29 @@
 	<hr class="hrmain fromLeft">
 
 	<div class="services" id="service">
-		<div class="serice">
-			<img src="img/ico/1.png">
-			<p>Photography</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		<div class="serice" style="order: 6">
+			<img src="img/ico/6.png">
+			<p>digital</p><span>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
 		</div>
-		<div class="serice">
-			<img src="img/ico/2.png"">
-			<p>Web Design</p><span>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
-		</div>
-		<div class="serice">
-			<img src="img/ico/3.png"">
-			<p>Creativity</p><span>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
-		</div>
-		<div class="serice">
-			<img src="img/ico/4.png"">
-			<p>seo</p><span>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</span>
-		</div>
-		<div class="serice">
-			<img src="img/ico/5.png"">
+		<div class="serice" style="order: 5">
+			<img src="img/ico/5.png">
 			<p>Css/Html</p><span>Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</span>
 		</div>
-		<div class="serice">
-			<img src="img/ico/6.png"">
-			<p>digital</p><span>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		<div class="serice" style="order: 4">
+			<img src="img/ico/4.png">
+			<p>seo</p><span>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</span>
+		</div>
+		<div class="serice" style="order: 3">
+			<img src="img/ico/3.png">
+			<p>Creativity</p><span>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		</div>
+		<div class="serice" style="order: 2">
+			<img src="img/ico/2.png">
+			<p>Web Design</p><span>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+		</div>
+		<div class="serice" style="order: 1">
+			<img src="img/ico/1.png">
+			<p>Photography</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
 		</div>
 	</div>
 </main>
@@ -233,7 +240,7 @@
 	<!-- ///////////////////////////////// -->
 	<div class="row footer" id="contact">
 
-	<div class="col-md-4 col-sm-12 col-xs-12 follow fromLeft">
+	<div class="col-md-4 col-sm-12 col-xs-12 follow frombtm">
 		<h3>MoGo</h3>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -277,7 +284,7 @@
 
 	<!-- /////////////////////////////////////////////////////// -->
 
-	<div class="col-md-3 col-sm-5 col-xs-12 inst fromRight">
+	<div class="col-md-3 col-sm-5 col-xs-12 inst frombtm">
 		<p>INSTAGRAM</p>
 		<img src="img/inst1.png">
 		<img src="img/inst2.png">
