@@ -39,6 +39,7 @@
 
 	<script>
 	$(document).ready(function(){
+		console.log()
 		$('.menu-trigger').click(function(){
 			$('.trigger').slideToggle(100);
 		});
@@ -56,11 +57,12 @@
 
 	<script>
 		$(document).ready(function(){
-			window.sr = ScrollReveal();
+			window.sr = ScrollReveal({mobile: false,});
 			sr.reveal('.frombtm', { 
 			duration: 1700, 
 			distance: '50px',
 			origin:'bottom'
+
 		})
 			sr.reveal('.fromLeft', { 
 			duration: 1500, 

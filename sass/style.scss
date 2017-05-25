@@ -46,6 +46,7 @@ header{
 			right: 0;
 			margin-right: 20px;
 			transition: 0.5s;
+			z-index: 100;
 			@media screen and (max-width: 600px){
 				display: block;
 			}
@@ -429,7 +430,7 @@ footer{
 
 	//////////////INST END///////////
 	h4{
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 }
 

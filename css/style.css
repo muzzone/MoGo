@@ -48,6 +48,7 @@ header .header .menu-trigger {
   right: 0;
   margin-right: 20px;
   transition: 0.5s;
+  z-index: 100;
 }
 @media screen and (max-width: 600px) {
   header .header .menu-trigger {
@@ -374,7 +375,7 @@ footer .inst a {
   color: #999999;
 }
 footer h4 {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 h1 {
