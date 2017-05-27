@@ -33,6 +33,10 @@
     	@font-face{
       		font-family:Roboto;
       		src: url(fonts/Roboto.ttf);
+    	}	
+    	@font-face{
+      		font-family:Roboto-LightItalic;
+      		src: url(fonts/Roboto-LightItalic.ttf);
     	}		
 	</style>
 
@@ -70,7 +74,7 @@
 		})
 			sr.reveal('.fromRight', { 
 			duration: 1500,
-			distance: '500px', 
+			distance: '100px', 
 			origin:'right'
 		})
 			sr.reveal('.fromTop', { 
@@ -105,7 +109,26 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-	    $(".spincrement").spincrement();
+	    
+		var show = true;
+
+	    $(window).on("scroll", function(){
+
+	    	if(!show) return false;
+
+	    	var winTop = $(window).scrollTop(); // возвращает растояние на которое прокручено окно
+	    	var elemTop = $("#work").offset().top; // возвращает растояние от дива с айди ворк до верха страницы
+
+	    	var winHeight =$(window).height (); // возвращает высоту окна 
+
+	    	if(winTop + winHeight - 70 >= elemTop){
+	    		 $(".spincrement").spincrement({
+	    		 	thousandSeparator: "",
+	    		 	duration: 8000
+	    		 });
+	    		show = false;
+	    	}
+	    });
 	});
 	</script>
 
@@ -142,7 +165,7 @@
 
 	</div>
 </header>
-
+<!-- /////////////HEADER END///////// -->
 <main>
 	<div class="story" id="About">
 		<h4 class="frombtm">
@@ -198,11 +221,11 @@
 			<p>members</p>
 		</div>
 	</div>
-
+<!-- //////////////MAIN END//////////// -->
 <main>
 	<h4 class="frombtm">
 	<span>We work with <br></span>
-	Amazing Services
+	AMAZING SERVICES
 	</h4 class="frombtm">
 	<hr class="hrmain fromLeft">
 
@@ -233,8 +256,72 @@
 		</div>
 	</div>
 </main>
+<!-- //////////////MAIN END/////////// -->
+<div class="adaptive">
+	<h4 class="frombtm">
+	<span>For all devices <br></span>
+	UNIQUE DESIGN
+	</h4>
+	<hr class="hrmain frombtm">
+	<div>
+		<p><img class="fromLeft" src="img/ipad.png"></p>
+		<p><img class="frombtm" src="img/iphone.png"></p>
+	</div>
+</div>
+<!-- //////////////////ADAPTIVE END//////////// -->
+<div class="quote fromLeft">
+	<div>
+	<div>	
+			<img src="img/quote.png">
+	</div>
+	<div>	
+		<p>
+		“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+		</p>
+		<span> <hr class="hrmain"> Jon Doe</span>
+	</div>
+	
+	</div>
+</div>
+<!-- /////////////QUOTE END///////////////// -->
+<div class="WhoWeAre">
+	<h4 class="frombtm">
+	<span>Who we are<br></span>
+	MEET OUR TEAM
+	</h4>
+	<hr class="hrmain frombtm">
+	<p class="standartText frombtm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
+		<div class="moveimg">
+			<div class="socialButtons" style="order: 3">
+				<img src="img/Layer 16.png">
+				<div class="socialButtons mask">
+				<div>
+					<a href="#"><object type="image/svg+xml" data="img/social/social.svg"></object></a>
+				</div>
+				</div>
+			</div>
 
+			<div class="socialButtons" style="order: 2">
+				<img src="img/Layer 19.png" >
+				<div class="socialButtons mask">
+				<div>
+					<a href="#"><object type="image/svg+xml" data="img/social/social.svg"></object></a>
+				</div>
+				</div>
+			</div>
+
+			<div class="socialButtons" style="order: 1">
+				<img src="img/Layer 18.png" >
+				<div class="socialButtons mask">
+				<div>
+					<a href="#"><object type="image/svg+xml" data="img/social/social.svg"></object></a>
+				</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!-- ///////////////WHOWEARE END//////////////// -->
 <footer >
 
 	<!-- ///////////////////////////////// -->
@@ -263,7 +350,7 @@
 		<input placeholder="Your Email..."type="text" name="Your Email..."><button>SUBSCRIBE</button>
 	</div>
 
-	<!-- //////////////////////////////////////////////// -->
+	<!-- /////////////////FOLLOW END/////////////////////// -->
 
 	<div class="col-md-4 col-sm-6 col-xs-12 blogs frombtm">
 		<p>BLOGS</p>
@@ -279,10 +366,9 @@
 			<div><a href=""><img src="img/blogs3.png"></a></div>
 			<div><a href=""><p>sed do eiusmod tempor  incididunt ut labore<br></p><span>Jan 9, 2016</span></a></div>
 		</div>
-			
 	</div>
 
-	<!-- /////////////////////////////////////////////////////// -->
+	<!-- //////////////BLOGS END///////////// -->
 
 	<div class="col-md-3 col-sm-5 col-xs-12 inst frombtm">
 		<p>INSTAGRAM</p>
@@ -298,10 +384,13 @@
 		<p></p>
 		<a href="#">View more photos</a>
 	</div>
+	<!-- ////////INST END/////// -->
 	</div>
+	<!-- ////////CLASS FOOTER END//////// -->
 	<hr>
 	<div class="col-md-12"><h4>© Created by Aleksey Miroshnychenko</h4></div>
 </footer>
+<!-- //////////FOOTER END//////////// -->
 
 
 </body>

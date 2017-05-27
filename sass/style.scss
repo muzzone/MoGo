@@ -211,7 +211,10 @@ header{
 		padding-left:10px;
 		padding-right:10px;
 	}
-	.moveimg{
+}
+
+///END STORY///
+.moveimg{
 		margin-bottom: 110px;
 		display: flex;
 		max-width: 1245px;
@@ -263,12 +266,9 @@ header{
 		:hover p{
 			opacity: 0.99;
 		}
-	}
-	////END MOVEIMG////
-
-
 }
-///END STORY///
+
+////END MOVEIMG////
 
 .numbers{
 		display: flex;
@@ -316,8 +316,8 @@ header{
 				}
 			}
 		}
-
 }
+
 ///NUMBERS END//////
 .services{
 	display:flex;
@@ -356,6 +356,109 @@ header{
 }
 ///SERVICES END/////
 
+.adaptive{
+	 margin-bottom: 100px;
+	 margin-top:-2px;
+	 width:100%;
+	 height:850px;
+	 background-image: url("../img/fon1.png");
+	 z-index:2;
+	 @media screen and (max-width: 590px){ 
+	 		display: none;
+		}
+	 > div {
+	 	width: 100%;
+	 	height: 630px;
+	 	text-align: center;
+	 	p{
+	 		margin-top: -24px;
+	 	}
+	 	p:nth-child(2){
+	 		margin-top: -390px;
+    		margin-left: 480px;
+    		@media screen and (max-width: 775px){ 
+				margin-left: 290px;
+			}
+	 	}
+	}
+}
+/////ADAPTIVE END////
+
+.quote{
+	background-color:#f8f8f8;
+	width:100%;
+	margin-top: -2px;
+    z-index: 2;
+	> div{
+		max-width:1200px;
+		margin:auto;
+		display: flex;
+		@media screen and (max-width: 775px){ 
+				flex-wrap: wrap;
+				justify-content: center;
+		}
+		img{
+			padding:50px;
+			@media screen and (max-width: 775px){ 
+				padding:20px;
+			}
+		}
+		p{
+			font-family: Roboto-LightItalic;
+			font-size: 24px;
+			color: #999999;
+			padding: 50px 10px 0 0;
+			@media screen and (max-width: 775px){ 
+				padding:20px 20px 0px 20px;
+			}
+		}
+		
+		span{
+			font-family: KaushanScript-Regular;
+			color: #333333;
+			font-size: 24px;
+			@media screen and (max-width: 775px){ 
+				padding-left:20px;
+			}
+			hr{
+			margin: 0;
+			display: inline-block;
+			margin: 0 5px 5px;
+			}
+		}
+	}
+}
+////QUOTE END/////
+
+.WhoWeAre {
+	.moveimg{
+		> div {
+			height: 470px;
+			margin: 15px;
+			> div {
+				margin-top: -250px;
+				img{
+					opacity: 0.9;
+				}
+			}
+			.mask{
+				transition: 0.3s;
+	    		height: 470px;
+	    		margin-top: -469px;
+	    		background-image: url("../img/mask2.png");
+	    		div{
+	    			position: relative;
+	    			top: 200px;
+	    			left: 80px;
+	    			width: 260px;
+	    		}
+			}
+			.mask:hover{
+				opacity: 0.96;
+			}
+		}
+	}
+}
 footer{
 	width:100%;
 	.footer{
@@ -469,11 +572,7 @@ footer{
 		margin-top: 0px;
 	}
 }
-
 ////////FOOTER END////////////
-
-
-
 h1{
 	font-size:150px;
 	padding-top:40px;

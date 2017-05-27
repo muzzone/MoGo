@@ -185,7 +185,8 @@ header .header .button:hover a {
   padding-left: 10px;
   padding-right: 10px;
 }
-.story .moveimg {
+
+.moveimg {
   margin-bottom: 110px;
   display: flex;
   max-width: 1245px;
@@ -194,11 +195,11 @@ header .header .button:hover a {
   cursor: default;
 }
 @media screen and (max-width: 420px) {
-  .story .moveimg {
+  .moveimg {
     display: none;
   }
 }
-.story .moveimg p {
+.moveimg p {
   font-family: Montserrat-bold;
   color: #fff;
   font-size: 18px;
@@ -207,36 +208,36 @@ header .header .button:hover a {
   opacity: 0;
   z-index: 3;
 }
-.story .moveimg > div {
+.moveimg > div {
   background-color: #95e1d3;
   height: 250px;
   margin: 15px;
   max-width: 380px;
 }
-.story .moveimg > div > div {
+.moveimg > div > div {
   margin-top: -250px;
 }
-.story .moveimg > div > div img {
+.moveimg > div > div img {
   opacity: 0.9;
 }
-.story .moveimg img {
+.moveimg img {
   transition: 0.3s;
 }
-.story .moveimg .mask {
+.moveimg .mask {
   margin-top: -271px;
   opacity: 0;
   height: 251px;
   width: 380px;
 }
-.story .moveimg :hover img:first-child {
+.moveimg :hover img:first-child {
   margin-top: -15px;
   margin-left: 15px;
 }
-.story .moveimg :hover .mask {
+.moveimg :hover .mask {
   margin-left: 15px;
   opacity: 0.9;
 }
-.story .moveimg :hover p {
+.moveimg :hover p {
   opacity: 0.99;
 }
 
@@ -323,6 +324,115 @@ header .header .button:hover a {
   font-family: Roboto;
   font-size: 11px;
   color: #999999;
+}
+
+.adaptive {
+  margin-bottom: 100px;
+  margin-top: -2px;
+  width: 100%;
+  height: 850px;
+  background-image: url("../img/fon1.png");
+  z-index: 2;
+}
+@media screen and (max-width: 590px) {
+  .adaptive {
+    display: none;
+  }
+}
+.adaptive > div {
+  width: 100%;
+  height: 630px;
+  text-align: center;
+}
+.adaptive > div p {
+  margin-top: -24px;
+}
+.adaptive > div p:nth-child(2) {
+  margin-top: -390px;
+  margin-left: 480px;
+}
+@media screen and (max-width: 775px) {
+  .adaptive > div p:nth-child(2) {
+    margin-left: 290px;
+  }
+}
+
+.quote {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-top: -2px;
+  z-index: 2;
+}
+.quote > div {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+@media screen and (max-width: 775px) {
+  .quote > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.quote > div img {
+  padding: 50px;
+}
+@media screen and (max-width: 775px) {
+  .quote > div img {
+    padding: 20px;
+  }
+}
+.quote > div p {
+  font-family: Roboto-LightItalic;
+  font-size: 24px;
+  color: #999999;
+  padding: 50px 10px 0 0;
+}
+@media screen and (max-width: 775px) {
+  .quote > div p {
+    padding: 20px 20px 0px 20px;
+  }
+}
+.quote > div span {
+  font-family: KaushanScript-Regular;
+  color: #333333;
+  font-size: 24px;
+}
+@media screen and (max-width: 775px) {
+  .quote > div span {
+    padding-left: 20px;
+  }
+}
+.quote > div span hr {
+  margin: 0;
+  display: inline-block;
+  margin: 0 5px 5px;
+}
+
+.WhoWeAre .moveimg > div {
+  height: 470px;
+  margin: 15px;
+}
+.WhoWeAre .moveimg > div > div {
+  margin-top: -250px;
+}
+.WhoWeAre .moveimg > div > div img {
+  opacity: 0.9;
+}
+.WhoWeAre .moveimg > div .mask {
+  transition: 0.3s;
+  height: 470px;
+  margin-top: -469px;
+  background-image: url("../img/mask2.png");
+}
+.WhoWeAre .moveimg > div .mask div {
+  position: relative;
+  top: 200px;
+  left: 80px;
+  width: 260px;
+}
+.WhoWeAre .moveimg > div .mask:hover {
+  opacity: 0.96;
 }
 
 footer {
