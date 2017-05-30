@@ -107,6 +107,9 @@ header .header .nav li :hover {
 header .header .nav li :hover hr {
   width: 100%;
 }
+header .header .nav li :focus {
+  background-color: rgba(255, 255, 255, 0);
+}
 header .header .nav2 {
   display: flex;
   font-size: 14px;
@@ -433,6 +436,27 @@ header .header .button:hover a {
 }
 .WhoWeAre .moveimg > div .mask:hover {
   opacity: 0.96;
+}
+
+.imgs {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.hipster {
+  max-width: 1200px;
+  margin: auto;
+}
+.hipster div {
+  height: 127px;
+  text-align: center;
+  padding: 0px 55px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 400px) {
+  .hipster div {
+    padding: 0px 10px;
+  }
 }
 
 footer {

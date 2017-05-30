@@ -110,6 +110,9 @@ header{
 					color: #fce38a;
 					background-color:rgba(255,255,255,0);
 				}
+				:focus {
+					background-color:rgba(255,255,255,0);
+				}
 
 			}
 		}
@@ -451,6 +454,7 @@ header{
 	    			top: 200px;
 	    			left: 80px;
 	    			width: 260px;
+	    			
 	    		}
 			}
 			.mask:hover{
@@ -459,6 +463,25 @@ header{
 		}
 	}
 }
+//////////WHOWEARE END/////////
+.imgs{
+	width:100%;
+	background-color:#f8f8f8;
+}
+.hipster{
+	max-width:1200px;
+	margin:auto;
+	div{
+		height: 127px;
+		text-align: center;
+		padding: 0px 55px;
+		margin-top: 30px;
+		@media screen and (max-width: 400px){ 
+			padding: 0px 10px;			
+		}
+	}
+}
+//////HIPSTER END////////
 footer{
 	width:100%;
 	.footer{

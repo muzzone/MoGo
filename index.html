@@ -117,7 +117,7 @@
 	    	if(!show) return false;
 
 	    	var winTop = $(window).scrollTop(); // возвращает растояние на которое прокручено окно
-	    	var elemTop = $("#work").offset().top; // возвращает растояние от дива с айди ворк до верха страницы
+	    	var elemTop = $("#numbers").offset().top; // возвращает растояние от дива с айди ворк до верха страницы
 
 	    	var winHeight =$(window).height (); // возвращает высоту окна 
 
@@ -130,6 +130,19 @@
 	    	}
 	    });
 	});
+	</script>
+	<!-- плавная прокрутка к якорю -->
+	<script>
+		$(document).ready(function(){
+			$('a[href*=#]').bind("click", function(e){
+			var anchor = $(this);
+			$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+			}, 300);
+			e.preventDefault();
+			});
+			return false;
+		});
 	</script>
 
 </head>
@@ -199,7 +212,7 @@
 	<!-- ///////END STORY/////// -->
 </main>
 
-	<div class="numbers frombtm" id="work">
+	<div class="numbers frombtm" id="numbers">
 		<div>
 			<span class="spincrement">42</span>
 			<p>Web Design Projects</p>
@@ -222,14 +235,14 @@
 		</div>
 	</div>
 <!-- //////////////MAIN END//////////// -->
-<main>
-	<h4 class="frombtm">
+<main id="service">
+	<h4 class="frombtm" >
 	<span>We work with <br></span>
 	AMAZING SERVICES
 	</h4 class="frombtm">
 	<hr class="hrmain fromLeft">
 
-	<div class="services" id="service">
+	<div class="services">
 		<div class="serice" style="order: 6">
 			<img src="img/ico/6.png">
 			<p>digital</p><span>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
@@ -257,7 +270,7 @@
 	</div>
 </main>
 <!-- //////////////MAIN END/////////// -->
-<div class="adaptive">
+<div class="adaptive" id="work">
 	<h4 class="frombtm">
 	<span>For all devices <br></span>
 	UNIQUE DESIGN
@@ -322,6 +335,53 @@
 		</div>
 </div>
 <!-- ///////////////WHOWEARE END//////////////// -->
+<div class="imgs">
+<div class="hipster row">
+	<div class="col-md-2 col-sm-4 col-xs-6">
+		<img src="img/ico/7.png" style="margin-top: 9px;">
+	</div>
+	<div class="col-md-2 col-sm-4 col-xs-6">
+		<img src="img/ico/8.png" style="margin-top: 16px;">
+	</div>
+	<div class="col-md-2 col-sm-4 col-xs-6">
+		<img src="img/ico/9.png">
+	</div>
+	<div class="col-md-2 col-sm-4 col-xs-6">
+		<img src="img/ico/10.png" style="margin-top: 15px;">
+	</div>
+	<div class="col-md-2 col-sm-4 col-xs-6">
+		<img src="img/ico/11.png">
+	</div>
+	<div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 30px;">
+		<img src="img/ico/12.png">
+	</div>
+</div>
+</div>
+<!-- ///////////HIPSTER END/////// -->
+<div class="WhatWeDo">
+	<h4 class="frombtm">
+	<span>What we do<br></span>
+	SOME OF OUR WORK
+	</h4>
+	<hr class="hrmain frombtm">
+	<p class="standartText frombtm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<!-- //////////WHATWEDO END/////////// -->
+<div class="quote fromLeft">
+	<div>
+	<div>	
+			<img src="img/Layer 36.png">
+	</div>
+	<div>	
+		<p style="margin-top: 25px;">
+		“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+		</p>
+		<span> <hr class="hrmain">Joshua Earle</span>
+	</div>
+	
+	</div>
+</div>
+
 <footer >
 
 	<!-- ///////////////////////////////// -->
