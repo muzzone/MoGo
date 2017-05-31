@@ -459,6 +459,17 @@ header .header .button:hover a {
   }
 }
 
+.WhatWeDo {
+  padding-bottom: 50px;
+}
+.WhatWeDo .works {
+  max-width: 1450px;
+}
+.WhatWeDo .works img {
+  padding: 0;
+  cursor: pointer;
+}
+
 footer {
   width: 100%;
 }

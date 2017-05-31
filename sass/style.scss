@@ -482,6 +482,16 @@ header{
 	}
 }
 //////HIPSTER END////////
+.WhatWeDo {
+	padding-bottom:50px;
+	.works {	
+		max-width: 1450px;
+		img{
+			padding:0;
+			cursor: pointer;
+		}
+	}
+}
 footer{
 	width:100%;
 	.footer{
