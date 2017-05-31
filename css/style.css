@@ -470,6 +470,44 @@ header .header .button:hover a {
   cursor: pointer;
 }
 
+.happy {
+  background-image: url("../img/clients/fon.png");
+  width: 100%;
+  height: 830px;
+}
+.happy .clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.happy .clients div {
+  max-width: 600px;
+}
+.happy .clients div p {
+  margin-top: 40px;
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+}
+.happy .clients div p span {
+  font-size: 15px;
+  font-family: Roboto-LightItalic;
+  color: #b0b0b0;
+  line-height: 3;
+}
+.happy .clients div span {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #b0b0b0;
+}
+.happy .clients div hr {
+  padding: 0;
+  margin: 0px 0px 15px 0px;
+}
+.happy .clients div img {
+  float: left;
+  padding: 40px 30px 40px 40px;
+}
+
 footer {
   width: 100%;
 }
