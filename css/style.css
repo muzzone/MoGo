@@ -474,38 +474,118 @@ header .header .button:hover a {
   background-image: url("../img/clients/fon.png");
   width: 100%;
   height: 830px;
+  margin-top: 50px;
 }
 .happy .clients {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
-.happy .clients div {
+.happy .clients div div {
   max-width: 600px;
+  padding-right: 10px;
 }
-.happy .clients div p {
+.happy .clients div div p {
   margin-top: 40px;
   font-family: Montserrat-Regular;
   font-size: 14px;
 }
-.happy .clients div p span {
+.happy .clients div div p span {
   font-size: 15px;
   font-family: Roboto-LightItalic;
   color: #b0b0b0;
   line-height: 3;
 }
-.happy .clients div span {
+.happy .clients div div span {
   font-family: Roboto;
   font-size: 15px;
   color: #b0b0b0;
 }
-.happy .clients div hr {
+.happy .clients div div hr {
   padding: 0;
   margin: 0px 0px 15px 0px;
 }
-.happy .clients div img {
+.happy .clients div div img {
   float: left;
   padding: 40px 30px 40px 40px;
+}
+@media screen and (max-width: 840px) {
+  .happy {
+    background-image: none;
+    background-color: #f8f8f8;
+    height: auto;
+  }
+  .happy .clients {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 460px) {
+  .happy {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .happy .clients div div {
+    text-align: center;
+  }
+  .happy .clients div div p {
+    margin-top: 0px;
+  }
+  .happy .clients div div img {
+    float: none;
+    padding: 30px;
+  }
+  .happy .clients div div hr {
+    margin: auto;
+    padding: 10px;
+  }
+}
+
+.blog {
+  padding-bottom: 100px;
+}
+.blog > div {
+  max-width: 1440px;
+}
+.blog > div > div {
+  max-width: 400px;
+}
+.blog > div > div > img {
+  padding-bottom: 10px;
+}
+.blog > div > div p {
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+.blog > div > div hr {
+  margin-left: 15px;
+}
+.blog > div > div > span {
+  font-family: Roboto;
+  font-size: 15px;
+  padding-left: 20px;
+  display: inline-block;
+  color: #b3b3b3;
+}
+.blog > div > div div {
+  display: inline;
+  padding: 5px;
+  margin-left: 10px;
+}
+.blog > div > div div img {
+  margin-top: -5px;
+  cursor: pointer;
+}
+.blog > div > div div span {
+  font-family: Roboto-LightItalic;
+  color: #b3b3b3;
+}
+
+.map {
+  margin-bottom: 50px;
+  height: 200px;
+  width: 100%;
+  background-image: url("../img/Layer 59.png");
 }
 
 footer {

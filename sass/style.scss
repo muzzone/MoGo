@@ -497,38 +497,124 @@ header{
 	background-image: url("../img/clients/fon.png");
 	width:100%;
 	height: 830px;
+	margin-top: 50px;
 	.clients{
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
 		div{
-			max-width: 600px;
-			p {
-				margin-top: 40px;
-				font-family: Montserrat-Regular;
-				font-size: 14px;
-				span{
-					font-size: 15px;
-					font-family: Roboto-LightItalic;
-					color: #b0b0b0;
-					line-height: 3;
+			div{
+				max-width: 600px;
+				padding-right: 10px;
+				p {
+					margin-top: 40px;
+					font-family: Montserrat-Regular;
+					font-size: 14px;
+					span{
+						font-size: 15px;
+						font-family: Roboto-LightItalic;
+						color: #b0b0b0;
+						line-height: 3;
+
+					}
 				}
-			}
-			span{
-				font-family: Roboto;
-				font-size: 15px;
-				color: #b0b0b0;
-			}
-			hr{
-				padding:0;
-				margin: 0px 0px 15px 0px;
-			}
-			img{
-				float: left;
-				padding: 40px 30px 40px 40px;
+				span{
+					font-family: Roboto;
+					font-size: 15px;
+					color: #b0b0b0;
+
+				}
+				hr{
+					padding:0;
+					margin: 0px 0px 15px 0px;
+				}
+				img{
+					float: left;
+					padding: 40px 30px 40px 40px;
+				}
 			}
 		}
 	}
+	@media screen and (max-width: 840px){ 
+		background-image: none;
+		background-color: #f8f8f8;
+		height: auto;
+		.clients{
+			flex-wrap: wrap;
+		}
+	}
+	@media screen and (max-width: 460px){ 
+		height: auto;
+		padding-bottom: 50px;
+		.clients{
+			div{
+				div{
+					text-align: center;
+					p{
+						margin-top: 0px;
+					}
+					img{
+						float: none;
+						padding: 30px;
+					}
+					hr{
+						margin: auto;
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}	
+}
+//////HAPPY END/////////
+.blog{
+	padding-bottom: 100px;
+	> div{
+		max-width: 1440px;
+		> div {
+			max-width: 400px;
+			> img{
+				padding-bottom: 10px;
+			}
+			p{
+				font-family: Montserrat-Regular;
+				font-size: 14px;
+				padding-left: 20px;
+				text-transform: uppercase;
+			}
+			hr{
+				margin-left: 15px;
+			}
+			> span{
+				font-family: Roboto;
+				font-size: 15px;
+				padding-left: 20px;
+    			display: inline-block;
+    			color: #b3b3b3;
+			}
+			div{
+				display: inline;
+				padding:5px;
+				margin-left: 10px;
+				img{
+					margin-top: -5px;
+					cursor: pointer;
+				}
+				span{
+					font-family: Roboto-LightItalic;
+					color: #b3b3b3;
+					
+				}
+			}
+		}	
+	}
+}
+///////BLOG END//////
+.map {
+	margin-bottom: 50px;
+	height:200px;
+	width:100%;
+	background-image: url("../img/Layer 59.png")
+
 }
 footer{
 	width:100%;
