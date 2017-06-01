@@ -377,6 +377,8 @@ header .header .button:hover a {
   height: 850px;
   background-image: url("../img/fon1.png");
   z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 590px) {
   .adaptive {
@@ -527,6 +529,8 @@ header .header .button:hover a {
 
 .happy {
   background-image: url("../img/clients/fon.png");
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 830px;
   margin-top: 50px;
@@ -653,6 +657,8 @@ header .header .button:hover a {
   height: 200px;
   width: 100%;
   background-image: url("../img/Layer 59.png");
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
 }
 .map img {
