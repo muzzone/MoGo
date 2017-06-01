@@ -279,6 +279,11 @@ header .header .button:hover a {
 .moveimg2 :hover p {
   opacity: 0.99;
 }
+@media screen and (min-width: 430px) {
+  .moveimg2 {
+    display: none;
+  }
+}
 
 .numbers {
   display: flex;

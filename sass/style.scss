@@ -304,6 +304,9 @@ header{
 	:hover p{
 		opacity: 0.99;
 	}
+	@media screen and (min-width: 430px){
+			display: none;
+		}
 }
 ////END MOVEIMG////
 
@@ -511,6 +514,7 @@ header{
 		:hover .socialGroup{
 			opacity: 0.99;
 		}
+
 	}
 }
 //////////WHOWEARE END/////////
