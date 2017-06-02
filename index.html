@@ -10,7 +10,6 @@
 	<script type="text/javascript" src="js/jquery.spincrement.js"></script>
 			<!-- ///////////Скролл//////////////// -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-	<script scr="js/main.js"></script>
 	  				<!-- bootstrap -->
 	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -41,114 +40,12 @@
     	}		
 	</style>
 
-	<!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
-
-	<script>
-	$(document).ready(function(){
-		console.log()
-		$('.menu-trigger').click(function(){
-			$('.trigger').slideToggle(100);
-		});
-
-		$(window).resize(function() {		
-			if (  $(window).width() > 601 ) {			
-				$('.trigger').removeAttr('style');
-			 }
-		});
-	});	
-	</script>
-
-	<!-- ////ОПЦИИ СКРОЛА//// -->
-
-	<script>
-		$(document).ready(function(){
-			window.sr = ScrollReveal({mobile: false,});
-			sr.reveal('.frombtm', { 
-			duration: 1700, 
-			distance: '50px',
-			origin:'bottom'
-		})
-			sr.reveal('.fromLeft', { 
-			duration: 1500, 
-			distance: '500px',
-			origin:'left'
-		})
-			sr.reveal('.fromRight', { 
-			duration: 1500,
-			distance: '100px', 
-			origin:'right'
-		})
-			sr.reveal('.fromTop', { 
-			duration: 1000,
-			delay: 1000,
-			distance: '100px', 
-			origin:'top'
-		})
-			sr.reveal('.learnMore', { 
-			duration: 1000,
-			delay: 2000,
-			distance: '0px', 
-			origin:'bottom'
-		})
-			sr.reveal('.serice', { 
-			duration: 1000,
-			distance: '2000px',
-			origin:'left' 
-			}, 
-			100);
-
-			sr.reveal('.mvimg', { 
-			duration: 1000,
-			distance: '2000px',
-			origin:'left' 
-			}, 
-			200);
-	});	
-	</script>
-
-	<!-- //////// Счетчик ///////// -->
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-	    
-		var show = true;
-
-	    $(window).on("scroll", function(){
-
-	    	if(!show) return false;
-
-	    	var winTop = $(window).scrollTop(); // возвращает растояние на которое прокручено окно
-	    	var elemTop = $("#numbers").offset().top; // возвращает растояние от дива с айди ворк до верха страницы
-
-	    	var winHeight =$(window).height (); // возвращает высоту окна 
-
-	    	if(winTop + winHeight - 70 >= elemTop){
-	    		 $(".spincrement").spincrement({
-	    		 	thousandSeparator: "",
-	    		 	duration: 8000
-	    		 });
-	    		show = false;
-	    	}
-	    });
-	});
-	</script>
-	<!-- плавная прокрутка к якорю -->
-	<script>
-		$(document).ready(function(){
-			$('a[href*=#]').bind("click", function(e){
-			var anchor = $(this);
-			$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top
-			}, 300);
-			e.preventDefault();
-			});
-			return false;
-		});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
 <header id="intro">
+	<div class="bird"></div>
 	<div class="header">
 		<p class="logo fromTop">MoGo</p>
 
@@ -170,11 +67,11 @@
 		<h1 class="frombtm">Welcome<br> to MoGo</h1>
 		<div class="learnMore"><div class="button"><a href="#">LEARN MORE</a></div></div>
 
-		<ul class="nav2 frombtm">
-			<li><a href="#intro"><hr><span>01</span>INTRO</a></li>
-			<li><a href="#work"><hr><span>02</span>WORK</a></li>
-			<li><a href="#About"><hr><span>03</span>ABOUT</a></li>
-			<li><a href="#contact"><hr><span>04</span>CONTACTS</a></li>
+		<ul class="nav2">
+			<li class="nav2Animation"><a href="#intro"><hr><span>01</span>INTRO</a></li>
+			<li class="nav2Animation"><a href="#work"><hr><span>02</span>WORK</a></li>
+			<li class="nav2Animation"><a href="#About"><hr><span>03</span>ABOUT</a></li>
+			<li class="nav2Animation"><a href="#contact"><hr><span>04</span>CONTACTS</a></li>
 		</ul>
 
 	</div>
@@ -324,8 +221,8 @@
 	<hr class="hrmain frombtm">
 	<p class="standartText frombtm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-		<div class="moveimg fromLeft">
-			<div class="socialButtons" style="order: 3">
+		<div class="moveimg">
+			<div class="socialButtons mvimg2" style="order: 3">
 				<img src="img/Layer 16.png">
 				<div class="socialButtons mask">
 				<div>
@@ -334,7 +231,7 @@
 				</div>
 			</div>
 
-			<div class="socialButtons" style="order: 2">
+			<div class="socialButtons mvimg2" style="order: 2">
 				<img src="img/Layer 19.png" >
 				<div class="socialButtons mask">
 				<div>
@@ -343,7 +240,7 @@
 				</div>
 			</div>
 
-			<div class="socialButtons" style="order: 1">
+			<div class="socialButtons mvimg2" style="order: 1">
 				<img src="img/Layer 18.png" >
 				<div class="socialButtons mask">
 				<div>
@@ -378,24 +275,24 @@
 		</div>
 </div>
 <!-- ///////////////WHOWEARE END//////////////// -->
-<div class="imgs frombtm">
+<div class="imgs">
 <div class="hipster row">
-	<div class="col-md-2 col-sm-4 col-xs-6">
+	<div class="col-md-2 col-sm-4 col-xs-6 hipsterAnimation">
 		<img src="img/ico/7.png" style="margin-top: 9px;">
 	</div>
-	<div class="col-md-2 col-sm-4 col-xs-6">
+	<div class="col-md-2 col-sm-4 col-xs-6 hipsterAnimation">
 		<img src="img/ico/8.png" style="margin-top: 16px;">
 	</div>
-	<div class="col-md-2 col-sm-4 col-xs-6">
+	<div class="col-md-2 col-sm-4 col-xs-6 hipsterAnimation">
 		<img src="img/ico/9.png">
 	</div>
-	<div class="col-md-2 col-sm-4 col-xs-6">
+	<div class="col-md-2 col-sm-4 col-xs-6 hipsterAnimation">
 		<img src="img/ico/10.png" style="margin-top: 15px;">
 	</div>
-	<div class="col-md-2 col-sm-4 col-xs-6">
+	<div class="col-md-2 col-sm-4 col-xs-6 hipsterAnimation">
 		<img src="img/ico/11.png">
 	</div>
-	<div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 30px;">
+	<div class="col-md-2 col-sm-4 col-xs-6 hipsterAnimation" style="margin-bottom: 30px;">
 		<img src="img/ico/12.png">
 	</div>
 </div>
@@ -410,12 +307,12 @@
 	<p class="standartText frombtm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 	<div class="works ">
-		<img class="col-md-4 col-sm-6 col-xs-12" src="img/works/Layer 26.png">
-		<img class="col-md-4 col-sm-6 col-xs-12" src="img/works/Layer 29.png">
-		<img class="col-md-4 col-sm-6 col-xs-12" src="img/works/Layer 31.png">
-		<img class="col-md-4 col-sm-6 col-xs-12" src="img/works/Layer 32.png">
-		<img class="col-md-4 col-sm-6 col-xs-12" src="img/works/Layer 33.png">
-		<img class="col-md-4 col-sm-6 col-xs-12" src="img/works/Layer 35.png">
+		<img class="col-md-4 col-sm-6 col-xs-12 worksAnimation" src="img/works/Layer 26.png">
+		<img class="col-md-4 col-sm-6 col-xs-12 worksAnimation" src="img/works/Layer 29.png">
+		<img class="col-md-4 col-sm-6 col-xs-12 worksAnimation" src="img/works/Layer 31.png">
+		<img class="col-md-4 col-sm-6 col-xs-12 worksAnimation" src="img/works/Layer 32.png">
+		<img class="col-md-4 col-sm-6 col-xs-12 worksAnimation" src="img/works/Layer 33.png">
+		<img class="col-md-4 col-sm-6 col-xs-12 worksAnimation" src="img/works/Layer 35.png">
 	</div>
 </div>
 <!-- //////////WHATWEDO END/////////// -->
@@ -442,8 +339,8 @@
 	<hr class="hrmain fromLeft">
 
 	<div class="clients">
-		<div>
-			<div>
+		<div >
+			<div class="clientsAnimation">
 				<img src="img/clients/Layer 47.png">
 				<p>Jaelynn Castillo <br> <span>Graphic Design</span></p>
 				
@@ -451,7 +348,7 @@
 				<span>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
 			</div>
 
-			<div>
+			<div class="clientsAnimation">
 				<img src="img/clients/Layer 49.png">
 				<p>Matthew Dix <br> <span>Graphic Design</span></p>
 				
@@ -460,7 +357,7 @@
 			</div>
 		</div>
 		<div>
-			<div>
+			<div class="clientsAnimation">
 				<img src="img/clients/Layer 50.png">
 				<p>Nick Karvounis <br> <span>Graphic Design</span></p>
 				
@@ -468,7 +365,7 @@
 				<span>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
 			</div>
 
-			<div>
+			<div class="clientsAnimation">
 				<img src="img/clients/Layer 51.png">
 				<p>Mike Petrucci <br><span>Graphic Design</span></p>
 				
@@ -479,7 +376,7 @@
 	</div>
 </div>
 <!-- ////////HAPPY END//////// -->
-<div class="blog frombtm" id="blog">
+<div class="blog" id="blog">
 
 	<h4 class="frombtm">
 	<span>Our stories<br></span>
@@ -487,7 +384,7 @@
 	</h4>
 	<hr class="hrmain fromLeft">
 	<div >
-		<div class="col-md-4 col-sm-4 col-xs-12">
+		<div class="col-md-4 col-sm-4 col-xs-12 blogAnimation">
 			<img src="img/1.png" class="col-md-12 col-sm-12 col-xs-12">
 			<p>Lorem ipsum dolor sit amet</p>
 			<span>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
@@ -501,7 +398,7 @@
 				<span>17</span>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12">
+		<div class="col-md-4 col-sm-4 col-xs-12 blogAnimation">
 			<img src="img/2.png" class="col-md-12 col-sm-12 col-xs-12">
 			<p>sed do eiusmod tempor</p>
 			<span>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</span>
@@ -515,7 +412,7 @@
 				<span>17</span>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12">
+		<div class="col-md-4 col-sm-4 col-xs-12 blogAnimation">
 			<img src="img/3.png" class="col-md-12 col-sm-12 col-xs-12">
 			<p>incididunt ut labore et dolore</p>
 			<span>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
@@ -606,7 +503,6 @@
 	<div class="col-md-12"><h4>© Created by Aleksey Miroshnychenko</h4></div>
 </footer>
 <!-- //////////FOOTER END//////////// -->
-
 
 </body>
 </html>

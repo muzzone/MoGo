@@ -32,6 +32,24 @@ header{
 	display: flex;
 	width:100%;
 	background-image: url(../img/headfon.png);
+	.bird {
+		position:absolute;
+		opacity: 1;
+		display: inline-block;
+		background-image: url(../img/bird.png);
+		background-position: center;
+    	background-repeat: no-repeat;
+		width: 100%;
+		height: 990px;
+		opacity: 0.1;
+		@media screen and (max-width: 880px){
+			height: 856px;
+		}
+		@media screen and (max-width: 600px){
+			display: none;
+		}
+
+	}
 	.header {
 		width: 1200px;
 		margin: auto;
