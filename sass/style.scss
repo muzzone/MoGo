@@ -31,12 +31,12 @@ body {
 header{
 	display: flex;
 	width:100%;
-	background-image: url(../img/headfon.png);
+	background: linear-gradient(to top, #fce38a, #f48b82);
 	.bird {
 		position:absolute;
 		opacity: 1;
 		display: inline-block;
-		background-image: url(../img/bird.png);
+		background-image: url(../img/bird.jpg);
 		background-position: center;
     	background-repeat: no-repeat;
 		width: 100%;
@@ -47,6 +47,9 @@ header{
 		}
 		@media screen and (max-width: 600px){
 			display: none;
+		}
+		@media screen and (min-width: 1920px){
+			background-size: 100%;
 		}
 
 	}
@@ -167,6 +170,10 @@ header{
 				    border-top:3px solid #f38181;
 				    transition: 0.5s;
 				}
+				@-moz-document url-prefix()
+{
+	body { background: grey; color: white }
+}
 				a{
 					color:rgba(255,255,255,0.7);
 					transition: 0.2s;
@@ -424,6 +431,9 @@ header{
 	 z-index:2;
 	 background-position: center;
      background-repeat: no-repeat;
+     @media screen and (min-width: 1920px){
+		background-size: 100%;
+	}
 	 @media screen and (max-width: 590px){ 
 	 		display: none;
 		}
@@ -577,6 +587,9 @@ header{
 	width:100%;
 	height: 830px;
 	margin-top: 50px;
+	@media screen and (min-width: 1920px){
+		background-size: 100%;
+	}
 	.clients{
 		display: flex;
 		justify-content: center;
@@ -708,6 +721,9 @@ header{
 	background-position: center;
     background-repeat: no-repeat;
 	text-align: center;
+	@media screen and (min-width: 1920px){
+		background-size: 100%;
+	}
 	img{
 		margin-top: 50px;
 	}
@@ -914,4 +930,10 @@ h4{
 }
 ul{
 	list-style-type:none;
+}
+@-moz-document url-prefix() 
+{ 
+	header .header .nav2 li hr {
+		margin-top: -22px;
+	}
 }
